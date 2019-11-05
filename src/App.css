@@ -1,22 +1,54 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.game {
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  user-select: none;
+  background-color: #121212;
+  color: #fff;
 }
-
-.App-link {
-  color: #09d3ac;
+.header {
+  background-color: #272727;
+  text-align: center;
+  margin: 0;
+  padding: 1em;
+  font-size: 2em;
+}
+.help {
+  text-align: center;
+  margin: 1em;
+  font-size: 1.5em;
+}
+.score {
+  text-align: center;
+  margin: 1em;
+  font-size: 1em;
+}
+.score span{
+  margin: 0 1em;
+}
+.star {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  font-size: 5em;
+}
+.numpad {
+  flex: 1;
+  padding: 1em;
+  text-align: center;
+}
+.number {
+  background-color: #eee;
+  border: thin solid #ddd;
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  font-size: 25px;
+}
+.number.right{
+  background-color: lawngreen;
+}
+.number.wrong {
+  background-color: lightcoral;
 }
